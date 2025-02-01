@@ -21,10 +21,15 @@
         .main-info h1 {
             margin: 0;
         }
-        .hobbies, .Software Engineering, .course, .job, .fun-fact {
+        .hobbies, .software-engineering, .course, .job, .fun-fact {
             background: #e7e7e7;
             padding: 15px;
             margin-bottom: 10px;
+        }
+        .last-updated {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -36,30 +41,37 @@
         </header>
 
         <section class="AUS">
-			<h2>Year at AUS: Senior II</h2>
-			<h2>AUS major: Computer Engineering</h2>
-			<h2>Reasons for pursuing this degree: I like computers and electrical things :)</h2>
+            <h2>Year at AUS: Senior II</h2>
+            <h2>AUS major: Computer Engineering</h2>
+            <h2>Reasons for pursuing this degree: I like computers and electrical things :)</h2>
         </section>
 
-		<section class="Software Engineering">
+        <section class="software-engineering">
             <h2>Reasons for Taking This Course</h2>
             <p>To be completely honest, I'm forced to take this course. However, I've been told this course will give me a small glimpse into the software engineering industry which I'll be looking forward to :D</p>
         </section>
 
-		<section class="job">
+        <section class="job">
             <h2>Full-time Student</h2>
-			<p>I mostly just study and try to survive another day TvT</p>
-        </section>		
+            <p>I mostly just study and try to survive another day TvT</p>
+        </section>     
 
-        	<section class="hobbies">
+        <section class="hobbies">
             <h2>Hobbies and Special Interests</h2>
-            <p> For hobbies I dilly-dally in a few sports from time-to-time like football, paddle, and basketball. As for interests, I'm interested in photography, robotics and gaming</p>
+            <p>For hobbies, I dilly-dally in a few sports from time to time like football, paddle, and basketball. As for interests, I'm interested in photography, robotics, and gaming.</p>
         </section>
 
-        	<section class="fun-fact">
+        <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>I once went through (as in lost and replaced) 3 prescription glasses in 1 month. Till I finally landed with the ones you'll most likely see me wear today ~.~ </p>
+            <p>I once went through (as in lost and replaced) 3 prescription glasses in 1 month. Till I finally landed with the ones you'll most likely see me wear today ~.~</p>
         </section>
+
+        <!-- Last Updated Section -->
+        <p class="last-updated">Last Updated on <span id="last-updated"></span></p>
     </div>
+
+    <script>
+        document.getElementById("last-updated").innerText = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>
